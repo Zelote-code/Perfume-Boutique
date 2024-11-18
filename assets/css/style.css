@@ -714,6 +714,35 @@ body {
   font-size: var(--fs-7);
   margin-block: 10px 25px;
 }
+.styled-video {
+  width: 700px;
+  max-width: 1000px; /* Ensure the video doesn't overflow */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
+}
+
+.styled-video:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .styled-video {
+    width: 700px;
+    max-width: 800px; /* Shrink for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .styled-video {
+    width: 350px;
+    max-width: 800px;
+  }
+}
+
+
 
 
 
